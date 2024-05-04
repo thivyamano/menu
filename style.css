@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body
+{
+	font-family: "Poppins", sans-serif;
+	height: auto;
+}
+nav
+{
+	height: 80px;
+	width: 100%;
+	background-color: skyblue;
+	display: flex;
+	flex-direction: row;
+	
+	
+
+}
+.logo
+{
+	width: 30%;
+	text-align: center;
+	line-height: 40px;
+
+
+}
+nav ul 
+{
+	
+	display: flex;
+	width: 70%;
+	justify-content: space-evenly;
+	list-style: none;
+	
+	margin-top: 0;
+	line-height: 80px;
+
+
+
+	
+}
+nav ul li 
+{
+	
+	font-size: 24px;
+	
+
+}
+nav ul li a 
+{
+	text-decoration: none;
+	color:black;
+}
+label 
+{
+	position: absolute;
+	right: 20px;
+	line-height: 80px;
+	font-size: 24px;
+	visibility: hidden;
+}
+#check
+{
+	display: none;
+
+}
+@media screen and (max-width:771px)
+
+{
+	ul 
+	{
+		position: fixed;
+		background: white;
+		top: 89px;
+		left: 100%;
+		height: 80vh;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		transition: all .5s;
+		margin-left: 8%;
+
+		
+
+		
+
+	}
+	label #btn
+	{
+		visibility: visible;
+		font-size: 24px;
+
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	#check:checked ~ label #btn
+	{
+		visibility: hidden;
+		
+		
+	}
+	#check:checked ~ label #cancel
+	{
+		visibility: visible;
+		position:relative;
+		right: 25px;
+		
+
+	}
+	
+}
+.image
+{
+	display: flex;
+	width:100%;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 6%;
+	
+}
+.image img 
+{
+	width: 50%;
+	height: 100%;
+
+}
